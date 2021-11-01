@@ -3,7 +3,48 @@
   <component name="ChangeListManager">
     <list default="true" id="5f74989d-dc6f-4908-8702-cb498221b3f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/configuration/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Framework-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Framework-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/08cee93b-dafc-47ed-b135-d395fd89effb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/11fea23c-eeb0-49be-a0f7-01103b3496f2-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/14d469a3-30aa-4621-92b9-5a677de9c313-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/24566246-b1d9-4eea-8f38-63043a59954c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/307d6907-4108-4e13-88d4-e0fcdf312214-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/32ade7ac-2d9a-4c2c-9d92-6c3f3b35a34b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3ec5a7b8-cdc7-4a3a-85cb-060633ce5b9f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5e054c94-c177-48a9-a031-d97f1c70b442-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/709bc0ea-2502-423c-ad38-92527cddf2b3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/78a04e18-dd9b-4b4c-884c-fff1dedd2f8a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/79cf4077-a1a3-493b-befe-94e6b81e0aee-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/80dd6a87-c381-4ccf-8cc0-087cc6b50e5f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/81aa10cc-e288-44c5-872c-39c5320bb736-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/846ebf24-e758-4962-a1e4-2b31fbb4ceac-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9d81843a-dc46-41ee-85c3-237eaa41cd3a-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/b32e1d9c-91c3-4271-8f81-cd29781c561a-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/b9822054-d607-4f0d-9c9e-a8b47f880f05-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/bc82b4af-9799-4e9d-b90b-ce2da5609d5e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d23a5e59-f154-4221-b421-1d7a4ded7ec0-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d61788b0-a22f-49b2-aa23-4368c9232d31-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e312f4d1-7505-4b3c-b38b-4fac966c12e8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e5b7f7bc-1cc5-4389-a60e-c7f5de702b42-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e8d38589-a341-4950-86ed-4520859915e3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ebc26b35-9e79-462e-a5d9-a2984b4c6ac4-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ef5a6457-49bd-4e4b-ac5f-bdc8bff680b1-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/fe018e73-3a73-4cce-b6a8-f935d7495f17-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/screenshots/User_login_with_valid_credential.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-runner.RunCucumberTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-runner.RunCucumberTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/runner.RunCucumberTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/runner.RunCucumberTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/allure.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/RunCucumberTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/RunCucumberTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinition/LoginStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinition/LoginStepDefinition.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +69,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../practice/PracticeAutomation" />
   </component>
@@ -93,22 +135,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1635314887276" />
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1635313518363">
+    <state width="1478" height="202" key="GridCell.Tab.0.bottom" timestamp="1635766594976">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1635313518363" />
-    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1635313518363">
+    <state width="1478" height="202" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1635766594976" />
+    <state width="1478" height="202" key="GridCell.Tab.0.center" timestamp="1635766594975">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1635313518363" />
-    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1635313518363">
+    <state width="1478" height="202" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1635766594975" />
+    <state width="1478" height="202" key="GridCell.Tab.0.left" timestamp="1635766594975">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1635313518363" />
-    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1635313518363">
+    <state width="1478" height="202" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1635766594975" />
+    <state width="1478" height="202" key="GridCell.Tab.0.right" timestamp="1635766594976">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1635313518363" />
+    <state width="1478" height="202" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1635766594976" />
     <state x="209" y="103" key="new project wizard" timestamp="1635314875933">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

@@ -1,6 +1,7 @@
 package hooks;
 
 
+import com.sun.javafx.runtime.async.AbstractRemoteResource;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -14,32 +15,62 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import utils.PropertyUtils;
 import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 
 public class BaseClass {
     public static WebDriver driver;
+    public static String url= "https://"+PropertyUtils.getProperty("saucelab.username")+":"+PropertyUtils.getProperty("saucelab.secret.key")+PropertyUtils.getProperty("saucelab.link");
 
     @Before
     public void setupBrowser(){
         String browserName = PropertyUtils.getProperty("browser");
-        switch (browserName.toLowerCase()){
-            case "chrome":
-                WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
-                break;
-            case "firefox":
-                WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
-                break;
-            case "edge":
-                WebDriverManager.edgedriver().setup();
-                driver = new EdgeDriver();
-                break;
-            default:
-                System.out.println("\nEnter valid browser from the list : chrome, firefox, edge");
-                break;
+        if (PropertyUtils.getProperty("remote").toLowerCase().equals("false")) {
+            switch (browserName.toLowerCase()) {
+                case "chrome":
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+                    break;
+                case "firefox":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+                case "edge":
+                    WebDriverManager.edgedriver().setup();
+                    driver = new EdgeDriver();
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + browserName.toLowerCase()+" Supported browsers : chrome, firefox, edge");
+            }
+        }else{
+            DesiredCapabilities caps;
+            switch (browserName.toLowerCase()){
+                case "chrome":
+                    caps = DesiredCapabilities.chrome();
+                    break;
+                case "firefox":
+                    caps = DesiredCapabilities.firefox();
+                    break;
+                case "edge":
+                    caps = DesiredCapabilities.edge();
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + browserName.toLowerCase());
+            }
+            caps.setCapability("platform",PropertyUtils.getProperty("platform"));
+            caps.setCapability("version",PropertyUtils.getProperty("browser.version"));
+            caps.setCapability("name",PropertyUtils.getProperty("test.name"));
+
+            try {
+                driver = new RemoteWebDriver(new URL(url),caps);
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
         }
     }
 
