@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5f74989d-dc6f-4908-8702-cb498221b3f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="20045S1cHyicyjV9UMspo1MhaIC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../practice/PracticeAutomation" />
+  </component>
+  <component name="RunManager" selected="JUnit.RunCucumberTest">
+    <configuration name="GeneratePersonDetails" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.GeneratePersonDetails" />
+      <module name="Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunCucumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.RunCucumberTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RunCucumberTest" />
+        <item itemvalue="Application.GeneratePersonDetails" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f74989d-dc6f-4908-8702-cb498221b3f3" name="Default Changelist" comment="" />
+      <created>1635167987768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635167987768</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="66" key="#Notifications" timestamp="1635229572133">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="361" y="66" key="#Notifications/0.0.1536.816@0.0.1536.816" timestamp="1635229572133" />
+    <state x="361" y="67" key="#Updates" timestamp="1635229600259">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="361" y="67" key="#Updates/0.0.1536.816@0.0.1536.816" timestamp="1635229600259" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1635314887276">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1635314887276" />
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1635313518363">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1635313518363" />
+    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1635313518363">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1635313518363" />
+    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1635313518363">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1635313518363" />
+    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1635313518363">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1635313518363" />
+    <state x="209" y="103" key="new project wizard" timestamp="1635314875933">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="209" y="103" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1635314875933" />
+  </component>
+</project>

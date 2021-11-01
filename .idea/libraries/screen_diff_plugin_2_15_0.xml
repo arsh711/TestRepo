@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="screen-diff-plugin-2.15.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.15.0/plugins/screen-diff-plugin/screen-diff-plugin-2.15.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

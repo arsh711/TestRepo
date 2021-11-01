@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/jackson-annotations-2.12.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/converter-jackson-2.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/retrofit-2.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/jackson-databind-2.12.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/allure-jira-commons-2.15.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/okio-1.15.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/jackson-core-2.12.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/okhttp-3.12.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
