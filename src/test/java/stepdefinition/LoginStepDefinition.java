@@ -63,4 +63,10 @@ public class LoginStepDefinition {
                 break;
         }
     }
+
+    @Given("testing download")
+    public void testingDownload() throws InterruptedException {
+        BaseClass.getDriver().get("https://sample-videos.com/csv/Sample-Spreadsheet-10-rows.csv");
+        Thread.sleep(20000);
+    }
 }

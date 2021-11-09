@@ -1,13 +1,14 @@
 package utils;
 
 import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
 public class CsvReader {
-    public static List<Map<String, Object>> getRecordFromCsv(String fileName) throws IOException {
+    public static List<Map<String, Object>> getRecordFromCsv(String fileName) throws IOException , CsvValidationException {
         List<Map<String, Object>> records = new ArrayList<>();
         List<String> header = new ArrayList<>();
         CSVReader reader = new CSVReader(new FileReader(System.getProperty("user.dir") + PropertyUtils.getProperty("default.download.location") + "/" + fileName));

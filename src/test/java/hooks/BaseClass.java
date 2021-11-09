@@ -9,12 +9,16 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import utils.PageUtils;
@@ -34,24 +38,24 @@ public class BaseClass {
     @Before
     public void setupBrowser(){
         String browserName = PropertyUtils.getProperty("browser");
-        DesiredCapabilities caps;
+        Capabilities caps;
         Map<String, Object> prefs = new HashMap<String, Object>();
         switch (browserName.toLowerCase()){
             case "chrome":
-                caps = DesiredCapabilities.chrome();
+                caps = new ChromeOptions();
                 prefs.put("download.default_directory", System.getProperty("user.dir")+PropertyUtils.getProperty("default.download.location"));
-                caps.setCapability("prefs",prefs);
+                ((ChromeOptions) caps).setExperimentalOption("prefs",prefs);
                 break;
             case "firefox":
-                caps = DesiredCapabilities.firefox();
-                caps.setCapability("browser.download.folderList", 2);
-                caps.setCapability("browser.download.dir",System.getProperty("user.dir")+PropertyUtils.getProperty("default.download.location"));
-                caps.setCapability("browser.helperApps.neverAsk.saveToDisk","application/vnd.microsoft.portable-executable");
+                caps = new FirefoxOptions();
+                ((FirefoxOptions) caps).setCapability("browser.download.folderList", 2);
+                ((FirefoxOptions) caps).setCapability("browser.download.dir",System.getProperty("user.dir")+PropertyUtils.getProperty("default.download.location"));
+                ((FirefoxOptions) caps).setCapability("browser.helperApps.neverAsk.saveToDisk","application/vnd.microsoft.portable-executable");
                 break;
             case "edge":
-                caps = DesiredCapabilities.edge();
+                caps = new EdgeOptions();
                 prefs.put("download.default_directory",  System.getProperty("user.dir")+PropertyUtils.getProperty("default.download.location"));
-                caps.setCapability("prefs",prefs);
+                ((EdgeOptions)caps).setCapability("prefs",prefs);
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + browserName.toLowerCase());
@@ -76,9 +80,22 @@ public class BaseClass {
                     throw new IllegalStateException("Unexpected value: " + browserName.toLowerCase()+" Supported browsers : chrome, firefox, edge");
             }
         }else{
-            caps.setCapability("platform",PropertyUtils.getProperty("platform"));
-            caps.setCapability("version",PropertyUtils.getProperty("browser.version"));
-            caps.setCapability("name",PropertyUtils.getProperty("test.name"));
+            switch (browserName.toLowerCase()) {
+                case "chrome":
+                    ((ChromeOptions) caps).setCapability("platform", PropertyUtils.getProperty("platform"));
+                    ((ChromeOptions) caps).setCapability("version", PropertyUtils.getProperty("browser.version"));
+                    ((ChromeOptions) caps).setCapability("name", PropertyUtils.getProperty("test.name"));
+                break;
+                case "firefox":
+                    ((FirefoxOptions) caps).setCapability("platform",PropertyUtils.getProperty("platform"));
+                    ((FirefoxOptions) caps).setCapability("version",PropertyUtils.getProperty("browser.version"));
+                    ((FirefoxOptions) caps).setCapability("name",PropertyUtils.getProperty("test.name"));
+                    break;
+                case "edge":
+                    ((EdgeOptions)caps).setCapability("platform",PropertyUtils.getProperty("platform"));
+                    ((EdgeOptions)caps).setCapability("version",PropertyUtils.getProperty("browser.version"));
+                    ((EdgeOptions)caps).setCapability("name",PropertyUtils.getProperty("test.name"));
+            }
 
             try {
                 driver = new RemoteWebDriver(new URL(url),caps);
