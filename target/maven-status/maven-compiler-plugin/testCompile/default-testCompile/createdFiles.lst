@@ -1,9 +1,0 @@
-runner\RunCucumberTest.class
-utils\PropertyUtils.class
-utils\ExcelReader.class
-pageobject\LoginPage.class
-utils\PageUtils.class
-hooks\BaseClass.class
-stepdefinition\LoginStepDefinition.class
-utils\GeneratePersonDetails.class
-utils\ExcelReader$1.class

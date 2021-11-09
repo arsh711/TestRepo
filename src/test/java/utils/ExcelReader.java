@@ -11,10 +11,10 @@ import java.util.Map;
 
 public class ExcelReader {
 
-    public static List<Map<String, Object>> getRecords(String sheetName) {
+    public static List<Map<String, Object>> getRecords(String fileName) {
         List<Map<String, Object>> records = new ArrayList<>();
         try {
-            Workbook workbook = new XSSFWorkbook(new FileInputStream(getFilePath(sheetName,"xlsx")));
+            Workbook workbook = new XSSFWorkbook(new FileInputStream(System.getProperty("user.dir")+PropertyUtils.getProperty("default.download.location") + "/" + fileName));
             Sheet firstSheet = workbook.getSheetAt(0);
             List<String> headers = new ArrayList<>();
             Row firstRow = firstSheet.getRow(0);
@@ -46,9 +46,5 @@ public class ExcelReader {
         }
         return records;
 
-    }
-
-    public static String getFilePath(String fileName, String fileType){
-        return System.getProperty("user.dir")+"/src/test/resources/download/"+fileName+"."+fileType;
     }
 }

@@ -17,10 +17,14 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import utils.PageUtils;
 import utils.PropertyUtils;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.PriorityQueue;
 
 
 public class BaseClass {
@@ -30,38 +34,48 @@ public class BaseClass {
     @Before
     public void setupBrowser(){
         String browserName = PropertyUtils.getProperty("browser");
+        DesiredCapabilities caps;
+        Map<String, Object> prefs = new HashMap<String, Object>();
+        switch (browserName.toLowerCase()){
+            case "chrome":
+                caps = DesiredCapabilities.chrome();
+                prefs.put("download.default_directory", System.getProperty("user.dir")+PropertyUtils.getProperty("default.download.location"));
+                caps.setCapability("prefs",prefs);
+                break;
+            case "firefox":
+                caps = DesiredCapabilities.firefox();
+                caps.setCapability("browser.download.folderList", 2);
+                caps.setCapability("browser.download.dir",System.getProperty("user.dir")+PropertyUtils.getProperty("default.download.location"));
+                caps.setCapability("browser.helperApps.neverAsk.saveToDisk","application/vnd.microsoft.portable-executable");
+                break;
+            case "edge":
+                caps = DesiredCapabilities.edge();
+                prefs.put("download.default_directory",  System.getProperty("user.dir")+PropertyUtils.getProperty("default.download.location"));
+                caps.setCapability("prefs",prefs);
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + browserName.toLowerCase());
+        }
+
         if (PropertyUtils.getProperty("remote").toLowerCase().equals("false")) {
+
             switch (browserName.toLowerCase()) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(caps);
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
-                    driver = new FirefoxDriver();
+                    driver = new FirefoxDriver(caps);
                     break;
                 case "edge":
                     WebDriverManager.edgedriver().setup();
-                    driver = new EdgeDriver();
+                    driver = new EdgeDriver(caps);
                     break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + browserName.toLowerCase()+" Supported browsers : chrome, firefox, edge");
             }
         }else{
-            DesiredCapabilities caps;
-            switch (browserName.toLowerCase()){
-                case "chrome":
-                    caps = DesiredCapabilities.chrome();
-                    break;
-                case "firefox":
-                    caps = DesiredCapabilities.firefox();
-                    break;
-                case "edge":
-                    caps = DesiredCapabilities.edge();
-                    break;
-                default:
-                    throw new IllegalStateException("Unexpected value: " + browserName.toLowerCase());
-            }
             caps.setCapability("platform",PropertyUtils.getProperty("platform"));
             caps.setCapability("version",PropertyUtils.getProperty("browser.version"));
             caps.setCapability("name",PropertyUtils.getProperty("test.name"));
@@ -88,7 +102,7 @@ public class BaseClass {
         String fileName = getScenarioName(scenario);
         File scr=screenshot.getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(scr, new File("target/screenshots/" + fileName + ".png"));
+            FileUtils.copyFile(scr, new File(PropertyUtils.getProperty("default.screenshot.location")+ "/" + fileName + ".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
