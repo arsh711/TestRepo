@@ -3,17 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5f74989d-dc6f-4908-8702-cb498221b3f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Framework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hooks/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinition/LoginStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinition/LoginStepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/CsvReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/CsvReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ExcelReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/configuration/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/configuration/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/configuration/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/BaseClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/RunCucumberTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/RunCucumberTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinition/LoginStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinition/LoginStepDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/CsvReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/CsvReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/FileUpload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/FileUpload.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +33,9 @@
     </option>
   </component>
   <component name="ProjectId" id="20045S1cHyicyjV9UMspo1MhaIC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -49,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/download" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../propel_ui_automation" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -66,7 +63,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RunCucumberTest">
+  <component name="RunManager" selected="Application.EmailReport">
     <configuration name="CsvReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utils.CsvReader" />
       <module name="Framework" />
@@ -80,8 +77,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExcelReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.ExcelReader" />
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.Demo" />
+      <module name="Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailReport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.EmailReport" />
       <module name="Framework" />
       <extension name="coverage">
         <pattern>
@@ -95,19 +105,6 @@
     </configuration>
     <configuration name="FileUpload" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utils.FileUpload" />
-      <module name="Framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GeneratePersonDetails" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.GeneratePersonDetails" />
       <module name="Framework" />
       <extension name="coverage">
         <pattern>
@@ -136,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EmailReport" />
         <item itemvalue="JUnit.RunCucumberTest" />
+        <item itemvalue="Application.Demo" />
         <item itemvalue="Application.FileUpload" />
         <item itemvalue="Application.CsvReader" />
-        <item itemvalue="Application.ExcelReader" />
-        <item itemvalue="Application.GeneratePersonDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -166,74 +163,86 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="361" y="67" key="#Updates/0.0.1536.816@0.0.1536.816" timestamp="1635229600259" />
+    <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636542757470">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.816@0.0.1536.816" timestamp="1636542757470" />
     <state x="566" y="317" width="403" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1636358418021">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="566" y="317" width="403" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.816@0.0.1536.816" timestamp="1636358418021" />
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1635838486507">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1636529728336">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1635838486507" />
-    <state width="1493" height="258" key="GridCell.Tab.0.bottom" timestamp="1636447281274">
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1636529728336" />
+    <state width="1493" height="233" key="GridCell.Tab.0.bottom" timestamp="1636544655021">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1636375256443">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1536.816@0.0.1536.816" timestamp="1636375256443" />
-    <state width="1493" height="258" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1636447281274" />
-    <state width="1493" height="258" key="GridCell.Tab.0.center" timestamp="1636447281273">
+    <state width="1493" height="233" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1636544655021" />
+    <state width="1493" height="233" key="GridCell.Tab.0.center" timestamp="1636544655020">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1636375256443">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.center.inPresentationMode/0.0.1536.816@0.0.1536.816" timestamp="1636375256443" />
-    <state width="1493" height="258" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1636447281273" />
-    <state width="1493" height="258" key="GridCell.Tab.0.left" timestamp="1636447281273">
+    <state width="1493" height="233" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1636544655020" />
+    <state width="1493" height="233" key="GridCell.Tab.0.left" timestamp="1636544655020">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1636375256443">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.left.inPresentationMode/0.0.1536.816@0.0.1536.816" timestamp="1636375256443" />
-    <state width="1493" height="258" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1636447281273" />
-    <state width="1493" height="258" key="GridCell.Tab.0.right" timestamp="1636447281273">
+    <state width="1493" height="233" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1636544655020" />
+    <state width="1493" height="233" key="GridCell.Tab.0.right" timestamp="1636544655020">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1636375256443">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.right.inPresentationMode/0.0.1536.816@0.0.1536.816" timestamp="1636375256443" />
-    <state width="1493" height="258" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1636447281273" />
-    <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1636447281275">
+    <state width="1493" height="233" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1636544655020" />
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom" timestamp="1636538162163">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1636447281275" />
-    <state width="1493" height="258" key="GridCell.Tab.1.center" timestamp="1636447281274">
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1636538162163" />
+    <state width="1493" height="260" key="GridCell.Tab.1.center" timestamp="1636538162163">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1636447281274" />
-    <state width="1493" height="258" key="GridCell.Tab.1.left" timestamp="1636447281274">
+    <state width="1493" height="260" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1636538162163" />
+    <state width="1493" height="260" key="GridCell.Tab.1.left" timestamp="1636538162163">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1636447281274" />
-    <state width="1493" height="258" key="GridCell.Tab.1.right" timestamp="1636447281274">
+    <state width="1493" height="260" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1636538162163" />
+    <state width="1493" height="260" key="GridCell.Tab.1.right" timestamp="1636538162163">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1636447281274" />
-    <state x="272" y="0" key="SettingsEditor" timestamp="1636352653386">
+    <state width="1493" height="260" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1636538162163" />
+    <state x="349" y="143" key="IDE.errors.dialog" timestamp="1636541033229">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="272" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1636352653386" />
+    <state x="349" y="143" key="IDE.errors.dialog/0.0.1536.816@0.0.1536.816" timestamp="1636541033229" />
+    <state x="272" y="0" key="SettingsEditor" timestamp="1636533650231">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="272" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1636533650231" />
+    <state x="345" y="144" width="846" height="602" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1636457602684">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="345" y="144" width="846" height="602" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.816@0.0.1536.816" timestamp="1636457602684" />
     <state x="209" y="103" key="new project wizard" timestamp="1635314875933">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="209" y="103" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1635314875933" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1635842164209">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1636536758863">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1635842164209" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1636536758863" />
     <state x="94" y="-2" key="search.everywhere.popup.inPresentationMode" timestamp="1636373282493">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

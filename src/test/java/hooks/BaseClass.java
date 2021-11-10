@@ -95,6 +95,7 @@ public class BaseClass {
                     ((EdgeOptions)caps).setCapability("platform",PropertyUtils.getProperty("platform"));
                     ((EdgeOptions)caps).setCapability("version",PropertyUtils.getProperty("browser.version"));
                     ((EdgeOptions)caps).setCapability("name",PropertyUtils.getProperty("test.name"));
+                    break;
             }
 
             try {
