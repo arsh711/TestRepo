@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Assertion Failed\n\texpected [true] but found [false]",
+      "children" : [ {
+        "name" : "User login with valid credential",
+        "uid" : "481cdba579f0f93f",
+        "parentUid" : "23b9b4f6355dab066657d0d40a494544",
+        "status" : "failed",
+        "time" : {
+          "start" : 1636615134647,
+          "stop" : 1636615153928,
+          "duration" : 19281
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "23b9b4f6355dab066657d0d40a494544"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

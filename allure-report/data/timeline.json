@@ -1,0 +1,255 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "DESKTOP-2TCCGF8",
+    "children" : [ {
+      "name" : "25540@DESKTOP-2TCCGF8.main(1)",
+      "children" : [ {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "a64bc9f67b6d6505",
+        "parentUid" : "b707609b4c6f5106da0564f56e4f29da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636615179146,
+          "stop" : 1636615190679,
+          "duration" : 11533
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Your password must be at least 5 characters long", "wron", "password", "superadmin@yopmail.com" ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "56b842e29fddeff9",
+        "parentUid" : "b707609b4c6f5106da0564f56e4f29da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636615190691,
+          "stop" : 1636615197832,
+          "duration" : 7141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "You are not authorized person", "123456", "invalid", "wrong@yopmail.com" ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "6f028416acd5d421",
+        "parentUid" : "b707609b4c6f5106da0564f56e4f29da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636615197863,
+          "stop" : 1636615204710,
+          "duration" : 6847
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Please provide a password", "", "password", "superadmin@yopmail.com" ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "822e325b0969d654",
+        "parentUid" : "b707609b4c6f5106da0564f56e4f29da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636615160595,
+          "stop" : 1636615179135,
+          "duration" : 18540
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Please enter a email address", "123456", "email", "" ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "64d078a0c7433cb6",
+        "parentUid" : "b707609b4c6f5106da0564f56e4f29da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636615154196,
+          "stop" : 1636615160581,
+          "duration" : 6385
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Please enter valid email address", "123456", "email", "wrong" ]
+      }, {
+        "name" : "User login with valid credential",
+        "uid" : "481cdba579f0f93f",
+        "parentUid" : "b707609b4c6f5106da0564f56e4f29da",
+        "status" : "failed",
+        "time" : {
+          "start" : 1636615134647,
+          "stop" : 1636615153928,
+          "duration" : 19281
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b707609b4c6f5106da0564f56e4f29da"
+    }, {
+      "name" : "17508@DESKTOP-2TCCGF8.main(1)",
+      "children" : [ {
+        "name" : "User login with valid credential",
+        "uid" : "3297d4434eb3f107",
+        "parentUid" : "78cf6a629b05d9bdc7dcd2ee7e14466f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1636614851643,
+          "stop" : 1636614867839,
+          "duration" : 16196
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "e0ce1655a3d6b6de",
+        "parentUid" : "78cf6a629b05d9bdc7dcd2ee7e14466f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636614867996,
+          "stop" : 1636614874294,
+          "duration" : 6298
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Please enter valid email address", "123456", "email", "wrong" ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "e42363729352c0aa",
+        "parentUid" : "78cf6a629b05d9bdc7dcd2ee7e14466f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636614881525,
+          "stop" : 1636614889879,
+          "duration" : 8354
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Your password must be at least 5 characters long", "wron", "password", "superadmin@yopmail.com" ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "748f7b9d6c3d67bd",
+        "parentUid" : "78cf6a629b05d9bdc7dcd2ee7e14466f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636614889908,
+          "stop" : 1636614898530,
+          "duration" : 8622
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "You are not authorized person", "123456", "invalid", "wrong@yopmail.com" ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "96bc7ad96eb66e55",
+        "parentUid" : "78cf6a629b05d9bdc7dcd2ee7e14466f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636614898546,
+          "stop" : 1636614905459,
+          "duration" : 6913
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Please provide a password", "", "password", "superadmin@yopmail.com" ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "7f7df0c3b68a54f4",
+        "parentUid" : "78cf6a629b05d9bdc7dcd2ee7e14466f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636614874306,
+          "stop" : 1636614881515,
+          "duration" : 7209
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Please enter a email address", "123456", "email", "" ]
+      } ],
+      "uid" : "78cf6a629b05d9bdc7dcd2ee7e14466f"
+    }, {
+      "name" : "13060@DESKTOP-2TCCGF8.main(1)",
+      "children" : [ {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "1d9a6696cfed2e87",
+        "parentUid" : "d37ee7dceb5fca9b909c3f6c182584ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636542847746,
+          "stop" : 1636542854883,
+          "duration" : 7137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Your password must be at least 5 characters long", "wron", "password", "superadmin@yopmail.com" ]
+      }, {
+        "name" : "User login with valid credential",
+        "uid" : "49d6560f8ab9a8a9",
+        "parentUid" : "d37ee7dceb5fca9b909c3f6c182584ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636542819065,
+          "stop" : 1636542834464,
+          "duration" : 15399
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "9a521c833694098b",
+        "parentUid" : "d37ee7dceb5fca9b909c3f6c182584ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636542861564,
+          "stop" : 1636542867131,
+          "duration" : 5567
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Please provide a password", "", "password", "superadmin@yopmail.com" ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "6c83abab16d1a2c3",
+        "parentUid" : "d37ee7dceb5fca9b909c3f6c182584ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636542842157,
+          "stop" : 1636542847737,
+          "duration" : 5580
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Please enter a email address", "123456", "email", "" ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "386d4a9f9887f75",
+        "parentUid" : "d37ee7dceb5fca9b909c3f6c182584ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636542854892,
+          "stop" : 1636542861553,
+          "duration" : 6661
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "You are not authorized person", "123456", "invalid", "wrong@yopmail.com" ]
+      }, {
+        "name" : "User login with invalid credential or blank credential",
+        "uid" : "d3f0879df3c0cbaf",
+        "parentUid" : "d37ee7dceb5fca9b909c3f6c182584ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636542834975,
+          "stop" : 1636542842140,
+          "duration" : 7165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Please enter valid email address", "123456", "email", "wrong" ]
+      } ],
+      "uid" : "d37ee7dceb5fca9b909c3f6c182584ef"
+    } ],
+    "uid" : "f61fcdf9c4cab11c63612b2acdde3629"
+  } ],
+  "name" : "timeline"
+}

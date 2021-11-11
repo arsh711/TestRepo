@@ -21,6 +21,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import utils.EmailReport;
 import utils.PageUtils;
 import utils.PropertyUtils;
 import java.io.*;
@@ -129,6 +130,7 @@ public class BaseClass {
     public void tearDown(Scenario scenario){
         if (scenario.isFailed()) {
             saveScreenShot(driver,scenario);
+            EmailReport.sendMail();
             try {
                 FileInputStream inputStream = new FileInputStream("target/screenshots/" + getScenarioName(scenario) + ".png");
                 Allure.addAttachment("Failed Test Screenshot",inputStream);

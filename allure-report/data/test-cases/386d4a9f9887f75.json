@@ -1,0 +1,163 @@
+{
+  "uid" : "386d4a9f9887f75",
+  "name" : "User login with invalid credential or blank credential",
+  "fullName" : "Login functionality: User login with invalid credential or blank credential",
+  "historyId" : "89bdd1805a1a1603220cfead165e8c4d",
+  "time" : {
+    "start" : 1636542854892,
+    "stop" : 1636542861553,
+    "duration" : 6661
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "hooks.BaseClass.setupBrowser()",
+    "time" : {
+      "start" : 1636542854892,
+      "stop" : 1636542856633,
+      "duration" : 1741
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given  User is on login page",
+      "time" : {
+        "start" : 1636542856634,
+        "stop" : 1636542859556,
+        "duration" : 2922
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When  User fill username as \"wrong@yopmail.com\" and password as \"123456\" and click on login button",
+      "time" : {
+        "start" : 1636542859557,
+        "stop" : 1636542860035,
+        "duration" : 478
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then  Verify the error message \"You are not authorized person\" for this \"invalid\"",
+      "time" : {
+        "start" : 1636542860036,
+        "stop" : 1636542860845,
+        "duration" : 809
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "hooks.BaseClass.tearDown(io.cucumber.java.Scenario)",
+    "time" : {
+      "start" : 1636542860845,
+      "stop" : 1636542861553,
+      "duration" : 708
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "loginFunc"
+  }, {
+    "name" : "tag",
+    "value" : "InvalidLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2TCCGF8"
+  }, {
+    "name" : "thread",
+    "value" : "13060@DESKTOP-2TCCGF8.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Login functionality"
+  }, {
+    "name" : "story",
+    "value" : "User login with invalid credential or blank credential"
+  }, {
+    "name" : "suite",
+    "value" : "Login functionality"
+  }, {
+    "name" : "testClass",
+    "value" : "User login with invalid credential or blank credential"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///D:/seasia/project/Framework/src/test/resources/FrameworkFeature/login.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.resources.FrameworkFeature.login_feature.Login functionality"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "error_message",
+    "value" : "You are not authorized person"
+  }, {
+    "name" : "password",
+    "value" : "123456"
+  }, {
+    "name" : "test",
+    "value" : "invalid"
+  }, {
+    "name" : "username",
+    "value" : "wrong@yopmail.com"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "loginFunc", "InvalidLogin" ]
+  },
+  "source" : "386d4a9f9887f75.json",
+  "parameterValues" : [ "You are not authorized person", "123456", "invalid", "wrong@yopmail.com" ]
+}

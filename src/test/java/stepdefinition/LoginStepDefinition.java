@@ -34,7 +34,7 @@ public class LoginStepDefinition {
 
     @Then("^Verify user is logged in$")
     public void verifyUserIsLoggedIn() {
-        String expectedWelcomeText = "Dashboard";
+        String expectedWelcomeText = "Dashboard arsh";
         System.out.println(loginPage.getDashboardHeadingText());
 //        Assert.assertTrue(loginPage.getDashboardHeadingText().contains(expectedWelcomeText));
         softAssert.assertTrue(loginPage.getDashboardHeadingText().contains(expectedWelcomeText));

@@ -1,14 +1,12 @@
 package utils;
 
-import io.cucumber.java.it.Ma;
-import sun.plugin.perf.PluginRollup;
-
+import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
 import javax.mail.*;
 import javax.mail.internet.*;
+import java.io.File;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -38,41 +36,67 @@ public class EmailReport {
         }
     }
     public static void mailSetup(String toMailID){
+        System.out.println("---------------Mail Service Started---------------");
         Properties props = new Properties();
 
-        props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.port", "465");
+        props.put("mail.smtp.host", PropertyUtils.getProperty("mail.smtp.host"));
 
-        Session session = Session.getDefaultInstance(props,
-                new javax.mail.Authenticator() {
+        Session session;
+        if (PropertyUtils.getProperty("mail.smtp.port") != null){
+            props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
+            props.put("mail.smtp.auth", "true");
+            props.put("mail.smtp.port", PropertyUtils.getProperty("mail.smtp.port"));
+            session = Session.getDefaultInstance(props,
+                    new javax.mail.Authenticator() {
 
-                    protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(PropertyUtils.getProperty("mail.from"), PropertyUtils.getProperty("mail.password"));
-                    }
+                        protected PasswordAuthentication getPasswordAuthentication() {
+                            return new PasswordAuthentication(PropertyUtils.getProperty("mail.from"), PropertyUtils.getProperty("mail.password"));
+                        }
 
-                });
-
+                    });
+        }
+        else {
+            session = Session.getDefaultInstance(props);
+        }
         try {
+            File file = new File(System.getProperty("user.dir")+"/allure-report");
+            if(!file.exists()) {
+                Runtime.getRuntime().exec("cmd /c start generateallurereport.bat", null, new File(System.getProperty("user.dir")));
+            }
+//            File file1 = new File(System.getProperty("user.dir")+"/src/test/resources/testdata/allure-report.zip");
+//            if(file1.exists()){
+//                file1.delete();
+//            }
+//            ZipUtils.zip(System.getProperty("user.dir")+"/allure-report",System.getProperty("user.dir")+"/src/test/resources/testdata/allure-report.zip");
+//            BodyPart messageBodyPart = new MimeBodyPart();
+//            String filePath = System.getProperty("user.dir")+"/src/test/resources/testdata/allure-report.zip";
+//
+//            DataSource dataSource = new FileDataSource(filePath);
+//            messageBodyPart.setDataHandler(new DataHandler(dataSource));
+//            messageBodyPart.setFileName("allure-report");
+
+            BodyPart messageBodyPart1 = new MimeBodyPart();
+            messageBodyPart1.setText("Hello,\nThe latest report for the project is attached to this mail.");
+
+            Multipart multipart = new MimeMultipart();
+//            multipart.addBodyPart(messageBodyPart);
+            multipart.addBodyPart(messageBodyPart1);
 
             Message message = new MimeMessage(session);
-
             message.setFrom(new InternetAddress(PropertyUtils.getProperty("mail.from")));
-
             message.setRecipients(Message.RecipientType.TO,InternetAddress.parse(toMailID));
-
             message.setSubject("Test Report");
-
-            message.setText("Hello,\nThe latest report for the project run is attached to this mail.");
+            message.setContent(multipart);
 
             Transport.send(message);
+
             System.out.println("=====Email Sent=====");
-        } catch (MessagingException e) {
+
+        } catch (MessagingException | IOException e) {
             throw new RuntimeException(e);
         }
-
     }
+
     public static void main(String[] args) {
         sendMail();
     }
