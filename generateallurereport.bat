@@ -1,4 +1,4 @@
 Echo OFF
 Echo Generating report
-call allure generate
-PAUSE
+call allure generate --clean
+exit

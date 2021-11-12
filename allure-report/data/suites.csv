@@ -1,7 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Nov 11 12:49:39 IST 2021","Thu Nov 11 12:49:50 IST 2021","11533","","Login functionality","","User login with invalid credential or blank credential","","User login with invalid credential or blank credential",""
-"passed","Thu Nov 11 12:49:57 IST 2021","Thu Nov 11 12:50:04 IST 2021","6847","","Login functionality","","User login with invalid credential or blank credential","","User login with invalid credential or blank credential",""
-"failed","Thu Nov 11 12:48:54 IST 2021","Thu Nov 11 12:49:13 IST 2021","19281","","Login functionality","","User login with valid credential","","User login with valid credential",""
-"passed","Thu Nov 11 12:49:50 IST 2021","Thu Nov 11 12:49:57 IST 2021","7141","","Login functionality","","User login with invalid credential or blank credential","","User login with invalid credential or blank credential",""
-"passed","Thu Nov 11 12:49:20 IST 2021","Thu Nov 11 12:49:39 IST 2021","18540","","Login functionality","","User login with invalid credential or blank credential","","User login with invalid credential or blank credential",""
-"passed","Thu Nov 11 12:49:14 IST 2021","Thu Nov 11 12:49:20 IST 2021","6385","","Login functionality","","User login with invalid credential or blank credential","","User login with invalid credential or blank credential",""
