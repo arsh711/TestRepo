@@ -130,7 +130,7 @@ public class BaseClass {
     public void tearDown(Scenario scenario){
         if (scenario.isFailed()) {
             saveScreenShot(driver,scenario);
-            EmailReport.sendMail();
+//            EmailReport.sendMail();
             try {
                 FileInputStream inputStream = new FileInputStream("target/screenshots/" + getScenarioName(scenario) + ".png");
                 Allure.addAttachment("Failed Test Screenshot",inputStream);

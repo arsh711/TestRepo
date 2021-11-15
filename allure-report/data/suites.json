@@ -1,0 +1,22 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Login functionality",
+    "children" : [ {
+      "name" : "User login with valid credential",
+      "uid" : "1f8e4d359108d8cc",
+      "parentUid" : "1d724e2421c677a0c20c8dd75b400c49",
+      "status" : "broken",
+      "time" : {
+        "start" : 1636963427546,
+        "stop" : 1636963442285,
+        "duration" : 14739
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1d724e2421c677a0c20c8dd75b400c49"
+  } ]
+}

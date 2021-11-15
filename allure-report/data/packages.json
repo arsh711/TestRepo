@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "src.test.resources.FrameworkFeature.login_feature.Login functionality",
+    "children" : [ {
+      "name" : "User login with valid credential",
+      "uid" : "1f8e4d359108d8cc",
+      "parentUid" : "67786d08417631369e8a0180b6167331",
+      "status" : "broken",
+      "time" : {
+        "start" : 1636963427546,
+        "stop" : 1636963442285,
+        "duration" : 14739
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "src.test.resources.FrameworkFeature.login_feature.Login functionality"
+  } ]
+}
