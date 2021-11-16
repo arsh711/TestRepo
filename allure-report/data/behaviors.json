@@ -1,13 +1,12 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "name" : "behaviors",
   "children" : [ {
     "name" : "Login functionality",
     "children" : [ {
       "name" : "User login with valid credential",
       "children" : [ {
         "name" : "User login with valid credential",
-        "uid" : "1f8e4d359108d8cc",
+        "uid" : "49e1bba8309c2268",
         "parentUid" : "ac3b5c0265cb9b31a33efc0d5c2e70c2",
         "status" : "broken",
         "time" : {
@@ -22,5 +21,6 @@
       "uid" : "ac3b5c0265cb9b31a33efc0d5c2e70c2"
     } ],
     "uid" : "188357eda975c95318be33c4a6155bd8"
-  } ]
+  } ],
+  "name" : "behaviors"
 }

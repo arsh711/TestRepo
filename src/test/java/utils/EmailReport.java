@@ -1,17 +1,17 @@
 package utils;
 
-import org.apache.commons.mail.Email;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.MultiPartEmail;
-
 import javax.mail.*;
 import javax.mail.internet.*;
+import javax.mail.search.FlagTerm;
+import javax.mail.search.FromTerm;
+import javax.mail.search.SearchTerm;
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
 
 public class EmailReport {
@@ -63,7 +63,7 @@ public class EmailReport {
         try {
             Runtime.getRuntime().exec("cmd /c start generateallurereport.bat",null, new File(System.getProperty("user.dir")));
             Thread.sleep(8000);
-            ZipUtils.zip(System.getProperty("user.dir")+"/allure-report",System.getProperty("user.dir")+"/src/test/resources/testdata/allure-report.zip");
+            ZipUtils.zipFiles(new File(System.getProperty("user.dir")+"/allure-report"),System.getProperty("user.dir")+"/src/test/resources/testdata/allure-report.zip");
 
 
             MultiPartEmail email = new MultiPartEmail();
@@ -83,7 +83,40 @@ public class EmailReport {
         }
     }
 
+    public static void readEmail() {
+        System.out.println("---------------Read Mail Service Started---------------");
+        Properties properties = new Properties();
+        properties.put("mail.imaps.host", "imap.googlemail.com");
+        properties.put("mail.imaps.port", "993");
+        properties.put("mail.imaps.starttls.enable", true);
+        Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator() {
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication("arshvirdi711@gmail.com", "arsh711singh");
+            }
+        });
+
+        try {
+            Store store = session.getStore("imaps");
+            store.connect("arshvirdi711@gmail.com", "arsh711singh");
+
+            Folder emails = store.getFolder("Inbox");
+            emails.open(Folder.READ_WRITE);
+            Message[] messages = emails.search(new FromTerm(new InternetAddress("arsh711singh@gmail.com")));
+
+            for (Message message : messages) {
+                System.out.println(" Subject "+message.getSubject());
+                String result = ((Multipart)message.getContent()).getBodyPart(0).getContent().toString();
+                System.out.println(result);
+            }
+            emails.close(false);
+            store.close();
+            System.out.println("---------------Mail Service Stopped---------------");
+            } catch (IOException | MessagingException ex) {
+                ex.printStackTrace();
+            }
+    }
+
     public static void main(String[] args) {
-        sendMail();
+      readEmail();
     }
 }

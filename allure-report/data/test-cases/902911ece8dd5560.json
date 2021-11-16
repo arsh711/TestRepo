@@ -1,5 +1,5 @@
 {
-  "uid" : "7af4313169b01550",
+  "uid" : "902911ece8dd5560",
   "name" : "User login with valid credential",
   "fullName" : "Login functionality: User login with valid credential",
   "historyId" : "a8095e30a92fa3176338e2972df1abe3",
@@ -26,8 +26,8 @@
     "parameters" : [ ],
     "stepsCount" : 0,
     "hasContent" : false,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   } ],
   "testStage" : {
     "status" : "broken",
@@ -46,8 +46,8 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
       "name" : "When  User fill valid credentials and click on login button",
       "time" : {
@@ -63,8 +63,8 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : true,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : true
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
     }, {
       "name" : "Then  Verify user is logged in",
       "time" : {
@@ -78,15 +78,15 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "stepsCount" : 3,
     "hasContent" : true,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   },
   "afterStages" : [ {
     "name" : "hooks.BaseClass.tearDown(io.cucumber.java.Scenario)",
@@ -98,23 +98,23 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "e1b04e9b898df27b",
+      "uid" : "346be84b32d92f74",
       "name" : "Failed Test Screenshot",
-      "source" : "e1b04e9b898df27b.png",
+      "source" : "346be84b32d92f74.png",
       "type" : "image/png",
       "size" : 22115
     }, {
-      "uid" : "c529480b5e182275",
+      "uid" : "ec5460a4272329cb",
       "name" : "Failed Scenario Name",
-      "source" : "c529480b5e182275.txt",
+      "source" : "ec5460a4272329cb.txt",
       "type" : "text/plain",
       "size" : 32
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
     "hasContent" : true,
-    "attachmentsCount" : 2,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
   } ],
   "labels" : [ {
     "name" : "tag",
@@ -164,6 +164,6 @@
     "categories" : [ ],
     "tags" : [ "loginFunc", "ValidLogin" ]
   },
-  "source" : "7af4313169b01550.json",
+  "source" : "902911ece8dd5560.json",
   "parameterValues" : [ ]
 }

@@ -3,16 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="5f74989d-dc6f-4908-8702-cb498221b3f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/configuration/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/980a4f569f938008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/c529480b5e182275.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/d9433cc7cb0c2a10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/e1b04e9b898df27b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/behaviors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/categories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/packages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/1f8e4d359108d8cc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/7af4313169b01550.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/timeline.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/duration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/severity.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/EmailReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/EmailReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ZipUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ZipUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/allure-report.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/allure-report.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/screenshots/User_login_with_valid_credential.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/screenshots/User_login_with_valid_credential.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/configuration/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/configuration/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/BaseClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/testdata/allure-report.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testdata/allure-report.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utils/EmailReport$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/EmailReport$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utils/EmailReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/EmailReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/ZipUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/ZipUtils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +71,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="t" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\seasia\project\Framework\src\test\resources\download" />
     </key>
@@ -140,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.EmailReport" />
+        <item itemvalue="Application.ZipUtils" />
         <item itemvalue="JUnit.RunCucumberTest" />
         <item itemvalue="JUnit.RunCucumber" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.ZipUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -177,6 +193,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.816@0.0.1536.816" timestamp="1636542757470" />
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1636971827567">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1636971827567" />
     <state x="498" y="191" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1636626261604">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -185,42 +205,46 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="566" y="317" width="403" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.816@0.0.1536.816" timestamp="1636723926469" />
+    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1636974687659">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816@0.0.1536.816" timestamp="1636974687659" />
     <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1636529728336">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1636529728336" />
-    <state width="1493" height="237" key="GridCell.Tab.0.bottom" timestamp="1636965233602">
+    <state width="1493" height="237" key="GridCell.Tab.0.bottom" timestamp="1637039726636">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1636375256443">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1536.816@0.0.1536.816" timestamp="1636375256443" />
-    <state width="1493" height="237" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1636965233602" />
-    <state width="1493" height="237" key="GridCell.Tab.0.center" timestamp="1636965233602">
+    <state width="1493" height="237" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1637039726636" />
+    <state width="1493" height="237" key="GridCell.Tab.0.center" timestamp="1637039726636">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1636375256443">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.center.inPresentationMode/0.0.1536.816@0.0.1536.816" timestamp="1636375256443" />
-    <state width="1493" height="237" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1636965233602" />
-    <state width="1493" height="237" key="GridCell.Tab.0.left" timestamp="1636965233602">
+    <state width="1493" height="237" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1637039726635" />
+    <state width="1493" height="237" key="GridCell.Tab.0.left" timestamp="1637039726635">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1636375256443">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.left.inPresentationMode/0.0.1536.816@0.0.1536.816" timestamp="1636375256443" />
-    <state width="1493" height="237" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1636965233602" />
-    <state width="1493" height="237" key="GridCell.Tab.0.right" timestamp="1636965233602">
+    <state width="1493" height="237" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1637039726635" />
+    <state width="1493" height="237" key="GridCell.Tab.0.right" timestamp="1637039726636">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1636375256443">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1536" height="260" key="GridCell.Tab.0.right.inPresentationMode/0.0.1536.816@0.0.1536.816" timestamp="1636375256443" />
-    <state width="1493" height="237" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1636965233602" />
+    <state width="1493" height="237" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1637039726636" />
     <state width="1493" height="260" key="GridCell.Tab.1.bottom" timestamp="1636717689906">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -245,6 +269,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="272" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1636533650231" />
+    <state x="370" y="0" width="795" height="816" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1636968934766">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="370" y="0" width="795" height="816" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.816@0.0.1536.816" timestamp="1636968934766" />
     <state x="578" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636721819588">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -261,9 +289,13 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1636536758863" />
+    <state x="431" y="137" key="search.everywhere.popup" timestamp="1636968920563">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
     <state x="94" y="-2" key="search.everywhere.popup.inPresentationMode" timestamp="1636373282493">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="94" y="-2" key="search.everywhere.popup.inPresentationMode/0.0.1536.816@0.0.1536.816" timestamp="1636373282493" />
+    <state x="431" y="137" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1636968920563" />
   </component>
 </project>
