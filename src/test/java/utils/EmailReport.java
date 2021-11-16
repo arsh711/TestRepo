@@ -4,13 +4,9 @@ import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.MultiPartEmail;
 import javax.mail.*;
 import javax.mail.internet.*;
-import javax.mail.search.FlagTerm;
 import javax.mail.search.FromTerm;
-import javax.mail.search.SearchTerm;
 import java.io.File;
 import java.io.IOException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 
@@ -63,8 +59,6 @@ public class EmailReport {
         try {
             Runtime.getRuntime().exec("cmd /c start generateallurereport.bat",null, new File(System.getProperty("user.dir")));
             Thread.sleep(8000);
-            ZipUtils.zipFiles(new File(System.getProperty("user.dir")+"/allure-report"),System.getProperty("user.dir")+"/src/test/resources/testdata/allure-report.zip");
-
 
             MultiPartEmail email = new MultiPartEmail();
             email.setMailSession(session);
@@ -72,7 +66,11 @@ public class EmailReport {
             email.setTo(Arrays.asList(InternetAddress.parse(toMailID)));
             email.setSubject("Test Report");
             email.setMsg("This is the latest report");
-            email.attach(new File(System.getProperty("user.dir") + "/src/test/resources/testdata/allure-report.zip"));
+            if (PropertyUtils.getProperty("add.zip.to.mail").equals("true")) {
+                ZipUtils.zipFiles(new File(System.getProperty("user.dir") + PropertyUtils.getProperty("location.folder.to.be.zip"))
+                        , System.getProperty("user.dir") + PropertyUtils.getProperty("zip.folder.location"));
+                email.attach(new File(System.getProperty("user.dir") + PropertyUtils.getProperty("zip.folder.location")));
+            }
             email.send();
             System.out.println("--------------------Email Sent--------------------");
             System.out.println("---------------Mail Service Stopped---------------");
@@ -83,30 +81,35 @@ public class EmailReport {
         }
     }
 
-    public static void readEmail() {
+    public static Message[] readEmail() {
         System.out.println("---------------Read Mail Service Started---------------");
+        Message[] messages = null;
         Properties properties = new Properties();
-        properties.put("mail.imaps.host", "imap.googlemail.com");
-        properties.put("mail.imaps.port", "993");
+        properties.put("mail.imaps.host", PropertyUtils.getProperty("mail.imaps.host"));
+        properties.put("mail.imaps.port", PropertyUtils.getProperty("mail.imaps.port"));
         properties.put("mail.imaps.starttls.enable", true);
         Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("arshvirdi711@gmail.com", "arsh711singh");
+                return new PasswordAuthentication(PropertyUtils.getProperty("read.mail.from"),PropertyUtils.getProperty("read.mail.password"));
             }
         });
 
         try {
             Store store = session.getStore("imaps");
-            store.connect("arshvirdi711@gmail.com", "arsh711singh");
+            store.connect(PropertyUtils.getProperty("read.mail.from"), PropertyUtils.getProperty("read.mail.password"));
 
             Folder emails = store.getFolder("Inbox");
             emails.open(Folder.READ_WRITE);
-            Message[] messages = emails.search(new FromTerm(new InternetAddress("arsh711singh@gmail.com")));
-
+            messages = emails.search(new FromTerm(new InternetAddress(PropertyUtils.getProperty("read.mail.from.sender.address"))));
             for (Message message : messages) {
                 System.out.println(" Subject "+message.getSubject());
-                String result = ((Multipart)message.getContent()).getBodyPart(0).getContent().toString();
-                System.out.println(result);
+                MimeMultipart result = (MimeMultipart) message.getContent();
+                for ( int i =0; i < result.getCount() ; i++ ){
+                    if (result.getBodyPart(i).getContentType().contains("TEXT/PLAIN")) {
+                        String mail = result.getBodyPart(i).getContent().toString();
+                        System.out.println(mail);
+                    }
+                }
             }
             emails.close(false);
             store.close();
@@ -114,6 +117,7 @@ public class EmailReport {
             } catch (IOException | MessagingException ex) {
                 ex.printStackTrace();
             }
+        return messages;
     }
 
     public static void main(String[] args) {
