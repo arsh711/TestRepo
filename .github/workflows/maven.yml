@@ -37,6 +37,9 @@ jobs:
     - name: Build with Maven
       run: mvn clean test -Dcucumber.options="--tags @ValidLogin" 
       
+    - name: Directory
+      run: ls
+      
     - name: Upload Allure results
       run: ls
       uses: actions/upload-artifact@v3.1.1
