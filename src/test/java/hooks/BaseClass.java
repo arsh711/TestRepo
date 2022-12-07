@@ -1,7 +1,5 @@
 package hooks;
 
-
-import com.sun.javafx.runtime.async.AbstractRemoteResource;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
