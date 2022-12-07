@@ -17,7 +17,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -30,14 +30,7 @@ jobs:
         
     - name: Setup Chrome
       uses: browser-actions/setup-chrome@latest
-      
-    - name: Run script
-      run: |
-            
-            sudo apt-get update
-            sudo apt-get install -y xvfb x11vnc
-            xvfb-run --server-args='-screen 0, 1024x768x16' google-chrome -start-maximized > /dev/null &
-      
+    
     - name: Build with Maven
       run: mvn clean test -Dcucumber.options="--tags @ValidLogin" 
     
