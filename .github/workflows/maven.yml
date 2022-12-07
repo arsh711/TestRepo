@@ -27,13 +27,12 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Install Google Chrome 
-
-      run: |
-
-              chmod +x ./scripts/InstallChrome.sh
-
-                          ./scripts/InstallChrome.sh 
+    - name: Download Google Chrome 
+      run: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
+      
+    - name: install downloaded package
+      run: sudo dpkg -i google-chrome-stable_current_amd64.deb
+      
     - name: Build with Maven
       run: mvn clean test -Dcucumber.options="--tags @ValidLogin" 
 
