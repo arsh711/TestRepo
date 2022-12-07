@@ -31,20 +31,26 @@ jobs:
     - name: Download Google Chrome 
       run: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
       
-    - name: install downloaded package
+    - name: Install downloaded package
       run: sudo dpkg -i google-chrome-stable_current_amd64.deb
+      
+    - name: Open Chrome
+      run: google-chrome
       
     - name: Build with Maven
       run: mvn clean test -Dcucumber.options="--tags @ValidLogin" 
+    
+    - name: CD target
+      run: cd /target
       
-    - name: zip allure results 
-      run: cd target && zip -r allure-results.zip allure-results
+    - name: Zip allure results 
+      run: zip -r allure-results.zip allure-results
       
     - name: Upload Allure results
       uses: actions/upload-artifact@v3.1.1
       with:
         name: Allure Results
-        path: target/allure-results.zip
+        path: allure-results.zip
       
     - name: Cache maven dependencies
       uses: actions/cache@v3
