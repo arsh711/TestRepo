@@ -1,3 +1,5 @@
+[![Java CI with Maven](https://github.com/arsh711/TestRepo/actions/workflows/maven.yml/badge.svg)](https://github.com/arsh711/TestRepo/actions/workflows/maven.yml)
+
 # **FRAMEWORK REQUIREMENTS**
 1.Allure Reports 
 
