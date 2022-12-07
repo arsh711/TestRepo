@@ -37,14 +37,14 @@ jobs:
     - name: Build with Maven
       run: mvn clean test -Dcucumber.options="--tags @ValidLogin" 
       
-    - name: Directory
-      run: ls
+    - name: zip allure results 
+      run: cd target && zip -r allure-results.zip allure-results
       
     - name: Upload Allure results
       uses: actions/upload-artifact@v3.1.1
       with:
         name: Allure Results
-        path: ./target/allure-results
+        path: target/allure-results.zip
       
     - name: Cache maven dependencies
       uses: actions/cache@v3
