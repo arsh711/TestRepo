@@ -36,7 +36,7 @@ jobs:
     
     - name: Zip Allure report
       run: |
-            cd /target
+            cd target
             zip -r allure-results.zip allure-results
       
     - name: Upload Allure results
