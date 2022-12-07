@@ -32,7 +32,7 @@ jobs:
       uses: browser-actions/setup-chrome@latest
     
     - name: Build with Maven
-      run: mvn test -Dcucumber.options = "--tags @ValidLogin" 
+      run: mvn clean test -Dcucumber.filter.tags="@ValidLogin" 
     
     - name: Zip Allure report
       run: |
