@@ -32,7 +32,7 @@ jobs:
       uses: browser-actions/setup-chrome@latest
     
     - name: Build with Maven
-      run: mvn clean test -Dcucumber.options="--tags @ValidLogin" 
+      run: mvn test -Dcucumber.options = "--tags @ValidLogin" 
     
     - name: Zip Allure report
       run: |
@@ -44,12 +44,6 @@ jobs:
       with:
         name: Allure Results
         path: allure-results.zip
-      
-    - name: Cache maven dependencies
-      uses: actions/cache@v3
-      with:
-        key: maven
-        path: ~/.m2
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
