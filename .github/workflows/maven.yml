@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
         
-    - name: Download Google Chrome 
+    - name: Google Chrome 
       run: |
             wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
             sudo dpkg -i google-chrome-stable_current_amd64.deb
@@ -38,9 +38,7 @@ jobs:
             sudo apt-get -y install imagemagick x11-apps
             Xvfb -ac :99 -screen 0 1280x1024x16 &
             export DISPLAY=:99
-
-    - name: Open Chrome
-      run: google-chrome
+            google-chrome 
       
     - name: Build with Maven
       run: mvn clean test -Dcucumber.options="--tags @ValidLogin" 
