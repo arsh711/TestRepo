@@ -32,7 +32,9 @@ jobs:
       uses: browser-actions/setup-chrome@latest
     
     - name: Build with Maven
-      run: cucumberui.bat
+      run: | 
+            ls 
+            cucumberui.bat
     
     - name: Zip Allure report
       run: |
