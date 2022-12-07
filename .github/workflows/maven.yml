@@ -33,10 +33,9 @@ jobs:
       
     - name: Run script
       run: |
-            sudo -i
-            apt-get update
-            apt-get install -y xvfb x11vnc
-            apt-get install -y curl git
+            
+            sudo apt-get update
+            sudo apt-get install -y xvfb x11vnc
             xvfb-run --server-args='-screen 0, 1024x768x16' google-chrome -start-maximized > /dev/null &
       
     - name: Build with Maven
