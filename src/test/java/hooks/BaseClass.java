@@ -42,6 +42,7 @@ public class BaseClass {
         switch (browserName.toLowerCase()){
             case "chrome":
                 caps = new ChromeOptions();
+                caps.addArguments("--headless");
                 prefs.put("download.default_directory", System.getProperty("user.dir")+PropertyUtils.getProperty("default.download.location"));
                 ((ChromeOptions) caps).setExperimentalOption("prefs",prefs);
                 break;
